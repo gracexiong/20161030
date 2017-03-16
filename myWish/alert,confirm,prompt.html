@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+*{ margin:0; padding:0; list-style:none; font-family: "微软雅黑","张海山锐线体简"}
+#div1{width:200px;height:200px;background:red;position: absolute;left:0;top:0;}
+</style>
+<script>
+window.onload=function(){
+	var oBtn=document.getElementById('btn1');
+	oBtn.onclick=enterId;
+	function enterId(){
+		var proMptId=window.prompt('请输入您的卡号','95599');	
+		if(proMptId){
+			var proMptPw=window.prompt('请输入您的密码','例如：您的生日');	
+			if(proMptPw){
+				enter();
+			}else{
+				alert('不能不输入密码');
+				enterId();		
+			}
+		}else{
+			alert('不能不输入账号');	
+			enterId();
+		}
+	};	
+	function enter(){
+		var userEnter=window.confirm('您确认取出所有银子给我么?');
+		if(userEnter){
+			var money=1000;
+			for(var i=0;i<10;i++){
+				alert(money-=100);	
+			}
+		}else{
+			alert('不能取消');
+			enter();	
+		}	
+	}
+};
+</script>
+</head>
+
+<body>
+
+<input type="button" value="点我取钱" id="btn1" >
+
+
+</body>
+</html>

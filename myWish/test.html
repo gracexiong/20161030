@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="../scripts/jquery-1.7.2.js"></script>
+        <style type="text/css">
+            #wrapper{
+                margin-bottom: 30px;
+            }
+            input{
+                height:30px;
+                margin-right: 30px;
+            }
+            button{
+                width:50px; 
+                height:30px;
+                border-radius: 5px;
+                margin-right: 20px;
+            }
+            .active{
+                color:red;
+                font-size: 30px;
+            }
+            table{
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table th{
+                width:200px ;
+                height: 30px;
+                margin-left: -1px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <input type="text" class="func" />
+            <input type="text" class="pro" />
+            <button class="add">添加</button>
+            <button class="del">删除</button>
+        </div>
+        <table border="1">
+            <tr>
+                <th>功能</th>
+                <th>属性</th>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>222</td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            $(document).$(function() {
+                $('.add').click(function(){
+                    $.ajax({
+                        
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>
